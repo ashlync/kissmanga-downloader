@@ -13,7 +13,7 @@ services:
       - java
       - -jar
       - /kissmanga-downloader.jar
-      - http://kissmanga.com/Manga/Shingeki-no-Kyojin
+      - https://kissmanga.com/Manga/Kimetsu-no-Yaiba/Ch-001--Cruelty?id=268022
   selenium:
     image: "elgalu/selenium:latest"
     ports:
@@ -23,5 +23,5 @@ services:
       - TZ=US/Pacific
       - VNC_PASSWORD=secret
     shm_size: 1g
-
+make run
 #template-example: https://github.com/elgalu/docker-selenium/blob/master/docker-compose.yml
